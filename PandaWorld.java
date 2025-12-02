@@ -93,7 +93,7 @@ public class PandaWorld extends World
         starGrid = new boolean[PLAY_WIDTH][PLAY_HEIGHT];
 
         // Place bamboo randomly (uses playable dimensions)
-        int bambooCount = 1+ (level * 0);
+        int bambooCount = 5+ (level * 3);
         placeBambooRandomly(bambooCount);
 
         // Place stars randomly (beneficial tiles, no overlap with bamboo)
