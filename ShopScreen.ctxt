@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ShopScreen
+comment1.params=
+comment1.target=ShopScreen()
+comment2.params=
+comment2.target=void\ started()
+comment2.text=\n\ Called\ automatically\ when\ this\ world\ becomes\ the\ active\ world\n\ (e.g.\ when\ you\ press\ Run,\ or\ when\ you\ Greenfoot.setWorld(new\ StartScreen()))\n
+comment3.params=
+comment3.target=void\ stopped()
+comment3.text=\n\ Called\ when\ this\ world\ is\ no\ longer\ the\ active\ world\n\ (e.g.\ scenario\ stopped\ or\ you\ switch\ to\ PandaWorld)\n
+comment4.params=
+comment4.target=void\ prepare()
+comment4.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\n
+numComments=5
