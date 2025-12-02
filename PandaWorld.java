@@ -373,22 +373,25 @@ public class PandaWorld extends World
      * Handle level completion.
      */
     private void levelComplete()
+{
+    levelUpSound.play();
+    level++;
+    if (level == 6)
     {
-        levelUpSound.play();
-        level++;
-        if (level == 6)
-        {
-            Greenfoot.setWorld(new GameComplete());
-        }
-        else
-        {
-            showText("Level " + (level - 1) + " Complete! Press SPACE for next level",
-                     WORLD_WIDTH / 2, 0);
-            Levels.currentLevel += 1;
-            Levels.advance = 1;
-            Greenfoot.setWorld(new AdvanceLevel());
-        }
+        // Final level finished → straight to game complete screen
+        Greenfoot.setWorld(new GameComplete());
     }
+    else
+    {
+        // Level finished → bump level variables
+        Levels.currentLevel += 1;
+        Levels.advance = 1;
+
+        // Now go to the minigame instead of AdvanceLevel
+        Greenfoot.setWorld(new MiniGameScreen());
+    }
+}
+
 
     /**
      * Handle game over.
